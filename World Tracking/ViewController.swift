@@ -24,7 +24,20 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+    }
+    
+    @IBAction func addNode(_ sender:UIButton) {
+        //Add the box.
+        let node = SCNNode()
+        //Change the box size.
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        //Change the box color.
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
+        //Change the box position.
+        node.position = SCNVector3(-0.3, -0.2, -0.5)
+        //Add the box into scene.
+        sceneView.scene.rootNode.addChildNode(node)
     }
     
     

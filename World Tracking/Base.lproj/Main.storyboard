@@ -21,13 +21,27 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzk-Vw-roB">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNy-Xx-jJI">
+                                <rect key="frame" x="20" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="YU4-FU-xsu"/>
+                                    <constraint firstAttribute="height" constant="80" id="y6z-k6-6Jv"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addNode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1u-x0-6HL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zzk-Vw-roB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0iX-Hf-qh6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzk-Vw-roB" secondAttribute="trailing" id="4yZ-Ic-z9M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zzk-Vw-roB" secondAttribute="bottom" id="5xT-1w-Eas"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QNy-Xx-jJI" secondAttribute="bottom" constant="20" id="8jw-Kl-tjW"/>
                             <constraint firstItem="Zzk-Vw-roB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sdL-2R-13N"/>
+                            <constraint firstItem="QNy-Xx-jJI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xGp-Wk-QH8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
