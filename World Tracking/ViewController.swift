@@ -35,9 +35,25 @@ class ViewController: UIViewController {
         //Change the box color.
         node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         //Change the box position.
-        node.position = SCNVector3(-0.3, -0.2, -0.5)
+        node.position = SCNVector3(0, 0, -0.3)
         //Add the box into scene.
         sceneView.scene.rootNode.addChildNode(node)
+    }
+    
+    @IBAction func reset(_ sender: UIButton) {
+        restartSession()
+    }
+    
+    func restartSession() {
+        //Pause the scene session.
+        sceneView.session.pause()
+        //Loop child node from parent
+        sceneView.scene.rootNode.enumerateChildNodes
+            { (node, _) in
+                node.removeFromParentNode()
+        }
+        //Recreate scene session
+        sceneView.session.run(configuration, options: [.resetTracking,.removeExistingAnchors])
     }
     
     

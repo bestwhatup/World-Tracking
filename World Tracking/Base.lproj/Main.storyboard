@@ -33,13 +33,27 @@
                                     <action selector="addNode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1u-x0-6HL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-Nz-xmh">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="T7f-Hx-Ryg"/>
+                                    <constraint firstAttribute="width" constant="80" id="iZW-4I-ZmU"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXa-dH-Lw2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zzk-Vw-roB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0iX-Hf-qh6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzk-Vw-roB" secondAttribute="trailing" id="4yZ-Ic-z9M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zzk-Vw-roB" secondAttribute="bottom" id="5xT-1w-Eas"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fH4-Nz-xmh" secondAttribute="bottom" constant="20" id="6As-Df-Nhz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QNy-Xx-jJI" secondAttribute="bottom" constant="20" id="8jw-Kl-tjW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fH4-Nz-xmh" secondAttribute="trailing" constant="20" id="pK6-n4-7rv"/>
                             <constraint firstItem="Zzk-Vw-roB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sdL-2R-13N"/>
                             <constraint firstItem="QNy-Xx-jJI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xGp-Wk-QH8"/>
                         </constraints>
